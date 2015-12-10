@@ -142,6 +142,7 @@ public class ATMTest {
         Card mockCard = mock(Card.class);
         Account mockAccount = mock(Account.class);
         double amount = 1100.0;
+        atmTest.insertCard(mockCard); // ver.2
         when(mockCard.getAccount()).thenReturn(mockAccount);
         atmTest.getCash(amount);
         InOrder inOrder = inOrder(mockCard, mockAccount);
@@ -158,6 +159,7 @@ public class ATMTest {
         Account mockAccount = mock(Account.class);
         double balance = 200.0;
         double amount = 500.0;
+        atmTest.insertCard(mockCard); // ver.2
         when(mockCard.getAccount()).thenReturn(mockAccount);
         when(mockAccount.getBalance()).thenReturn(balance);
         when(mockCard.getAccount().withdrow(amount)).thenReturn(balance - amount);
@@ -175,6 +177,7 @@ public class ATMTest {
         ATM atmTest = new ATM(atmMoney);
         Card mockCard = mock(Card.class);
         Account mockAccount = mock(Account.class);
+        atmTest.insertCard(mockCard); // ver.2
         double balance = 600.0;
         double amount = 100.0;
         when(mockCard.getAccount()).thenReturn(mockAccount);
