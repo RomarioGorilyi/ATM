@@ -142,8 +142,11 @@ public class ATMTest {
         Card mockCard = mock(Card.class);
         Account mockAccount = mock(Account.class);
         double amount = 1100.0;
+        int pinCode = 7777;
         atmTest.insertCard(mockCard); // ver.2
         when(mockCard.getAccount()).thenReturn(mockAccount);
+        when(mockCard.checkPin(pinCode)).thenReturn(true);
+        atmTest.validateCard(mockCard, pinCode);
         atmTest.getCash(amount);
         InOrder inOrder = inOrder(mockCard, mockAccount);
         inOrder.verify(mockCard).getAccount();
@@ -157,12 +160,15 @@ public class ATMTest {
         ATM atmTest = new ATM(1000.0);
         Card mockCard = mock(Card.class);
         Account mockAccount = mock(Account.class);
+        int pinCode = 7777;
         double balance = 200.0;
         double amount = 500.0;
         atmTest.insertCard(mockCard); // ver.2
         when(mockCard.getAccount()).thenReturn(mockAccount);
         when(mockAccount.getBalance()).thenReturn(balance);
+        when(mockCard.checkPin(pinCode)).thenReturn(true);
         when(mockCard.getAccount().withdrow(amount)).thenReturn(balance - amount);
+        atmTest.validateCard(mockCard, pinCode);
         atmTest.getCash(amount);
         InOrder inOrder = inOrder(mockCard, mockAccount);
         inOrder.verify(mockCard).getAccount();
@@ -180,14 +186,20 @@ public class ATMTest {
         atmTest.insertCard(mockCard); // ver.2
         double balance = 600.0;
         double amount = 100.0;
+        int pinCode = 7777;
         when(mockCard.getAccount()).thenReturn(mockAccount);
+        when(mockCard.checkPin(pinCode)).thenReturn(true);
+        when(mockCard.isBlocked()).thenReturn(false);
         when(mockAccount.getBalance()).thenReturn(balance);
         when(mockAccount.withdrow(amount)).thenReturn(amount);
+        atmTest.validateCard(mockCard, pinCode);
         atmTest.getCash(amount);
         when(mockAccount.getBalance()).thenReturn(balance - amount);
         assertEquals(atmTest.getMoneyInATM(), atmMoney - amount, 0.0);
         assertEquals(atmTest.checkBalance(), balance - amount, 0.0);
         InOrder inOrder = inOrder(mockCard, mockAccount);
+        inOrder.verify(mockCard).isBlocked();
+        inOrder.verify(mockCard).checkPin(pinCode);
         inOrder.verify(mockCard, times(4)).getAccount();
         verify(mockAccount).withdrow(amount);
         inOrder.verify(mockAccount).getBalance();
