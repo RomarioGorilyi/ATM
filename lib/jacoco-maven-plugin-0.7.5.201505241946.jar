@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+  <title>Action Required - Guest Access</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="reset-min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/guest.js"></script>
+</head>
+<body class="login-page">
+<!-- see README.txt for HTML customization instructions -->
+<div class="page-content" style="padding-top:100px;">
+	<div class="login-content content-box">
+		
+
+		
+	</div>
+
+	<div class="login-content content-box">
+		<form name="input" id="submit-form" method="post" action="login">
+			<div class="tou-box">
+				<h2>Умови використання WIFI в НТУУ "КПІ"</h2>
+				<div class="tou-wrapper" id="tou">
+					<div class="tou">
+<!--					<p>Terms of Use</p>
+					<p>By accessing the wireless network, you acknowledge that you're of legal age, you have read and understood and agree to be bound by this agreement</p>
+					<ul>
+						<li>The wireless network service is provided by the property owners and is completely at their discretion. Your access to the network may be blocked, suspended, or terminated at any time for any reason.</li>
+						<li>You agree not to use the wireless network for any purpose that is unlawful and take full responsibility of your acts.</li>
+						<li>The wireless network is provided &quot;as is&quot; without warranties of any kind, either expressed or implied. </li>
+					</ul>
+-->
+
+<p align="justify" style="margin-bottom: 0cm; line-height: 100%"><span lang="uk-UA"><b>Підключаючись до Wi-Fi точок доступу НТУУ «КПІ»  на території університету Ви погоджуєтесь з наступними правилами та зобов’язуєтесь їх дотримуватись.</b></span></p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+1. Використання послуг Wi-Fi мережі доступу (далі, Послуги)  з порушенням даної Угоди приводить до цивільної, адміністративної або кримінальної відповідальності.</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+2. У випадку, якщо Ви не згодні з умовами даної Угоди, Ви не маєте права підключатися до Wi-Fi мережі доступу НТУУ «КПІ» та користуватися Послугами. 
+</p>
+<p align="justify" style="margin-bottom: 0cm; line-height: 100%"><span lang="uk-UA">3.
+Вибір Вами пункту «Я погоджуюсь з умовами даної Угоди» і натискання кнопки «Продовжити користування мережею»
+означає Ваше повну і безумовну згоду з усіма пунктами та умовами даної Угоди.
+</span>
+</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4. При користуванні Послугами забороняється:</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.1) використовувати Послуги в комерційних цілях, шляхом їх перепродажу третім особам;</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.2) передавати й розміщати в мережі Інтернет інформацію та програмне забезпечення, що містить комп'ютерні віруси або інші шкідливі компоненти;</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.3) використовувати Послуги для масового розсилання незапитуваних адресатами повідомлень комерційного, агітаційного й іншого характеру (спам);</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.4) без дозволу володаря посилати, публікувати, передавати, відтворювати або поширювати за допомогою Послуг програмне забезпечення або інші матеріали, повністю або частково захищені авторськими або іншими правами,</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.5) проводити розсилання рекламних, інформаційних і інших матеріалів іншим користувачам мережі Інтернет, крім випадків, коли адресати згодні одержати ці матеріали;</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.6) відправляти по мережі Інтернет інформацію, розповсюдження, використання та володіння якої суперечить українському або міжнародному законодавству;</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.7) використовувати мережу Інтернет для поширення матеріалів, що ображають людську гідність, що пропагують насильство або екстремізм, що розпалюють расову, національну або релігійну ворожнечу, що переслідують хуліганські або
+шахрайські цілі;</p>
+<p align="justify" style="margin-bottom: 0cm; line-height: 100%"><span lang="uk-UA">4.8)
+фальсифікувати фізичні адреси власних </span><span lang="en-US">Wi-Fi </span>–<span lang="uk-UA">пристроїв, адреси, використовувані в мережних протоколах, а також іншу службову інформацію при передачі даних через мережу;</span></p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.9) використовувати неіснуючі зворотні адреси при відправлення електронних листів за винятком випадків, коли використання якого-небудь ресурсу мережі Інтернет у явній формі дозволяє анонімність;</p>
+<p lang="uk-UA" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+4.10) здійснювати спроби несанкціонованого доступу до ресурсів корпоративної мережі університету, мереж інших операторів, мережі Інтернет, проведення або участь у спробах несанкціонованого доступу до мережного обладнання операторів або інших користувачів, мережевих атаках та ін.</p>
+
+					</div>
+				</div>
+				<fieldset class="accept-tou">
+					<input id="accept-tou" type="checkbox" checked="checked" name="accept-tou" value="yes" />
+					<label class="normal" >Я усвідомлюю, що за будь-які порушення умов <a href="javascript:void(0)" id="show-tou">даної Угоди</a> при використанні Послуг буду нести персональну відповідальність згідно законодавства України, міжнародних норм, правил університету </label> 
+				</fieldset>
+				<div class="form-controls">
+					<!-- submit (only for no authentication) -->
+					
+						<input name="connect" type="submit" value="Підключитися" id="connect" class="button requires-tou" />
+					
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	var form = $('#submit-form');
+	form.submit(function() {
+		form.find('input[name=connect]').disable();
+		form.find('input[name=byfree]').disable();
+		form.find('input[name=byvoucher]').disable();
+		form.find('input[name=bycredit]').disable();
+	});
+	$('#tou').hide();
+	$('#show-tou').click(function() {
+		$('#tou').show();
+		});
+	$('a.requires-tou').click(function ($evt) {
+		if ($(this).data('disabled')) {
+			$evt.preventDefault();
+			return false;
+		}
+	});
+
+	$('#accept-tou').click(function() {
+		if (!$('#accept-tou').checked()) {
+			$('input.requires-tou').disable();
+			$('a.requires-tou').data('disabled', true);
+			$('a.requires-tou').disable();
+		}
+		else {
+			$('input.requires-tou').enable();
+			$('a.requires-tou').removeData('disabled');
+			$('a.requires-tou').enable();
+		}
+	});
+});
+</script>
+
+</body>
+</html>

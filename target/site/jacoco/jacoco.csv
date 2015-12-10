@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+MyATM,ua.pti.myatm.exceptions,NoCardInsertedException,0,4,0,0,0,2,0,1,0,1
+MyATM,ua.pti.myatm.exceptions,NotEnoughMoneyInATMException,0,4,0,0,0,2,0,1,0,1
+MyATM,ua.pti.myatm.exceptions,NotEnoughMoneyInAccountException,0,4,0,0,0,2,0,1,0,1
+MyATM,ua.pti.myatm,MyATM,4,0,0,0,2,0,2,0,2,0
+MyATM,ua.pti.myatm,ATM,0,137,0,20,0,38,0,17,0,7
