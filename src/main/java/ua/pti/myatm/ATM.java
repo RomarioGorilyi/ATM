@@ -56,6 +56,9 @@ public class ATM {
 
     //Возвращает сколько денег есть на счету
     public double checkBalance() throws NoCardInsertedException {
+        if (card.isBlocked()){
+            throw new IllegalArgumentException("Card is blocked");
+        }
         return this.card.getAccount().getBalance();
     }
 

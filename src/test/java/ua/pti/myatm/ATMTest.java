@@ -200,7 +200,7 @@ public class ATMTest {
         InOrder inOrder = inOrder(mockCard, mockAccount);
         inOrder.verify(mockCard).isBlocked();
         inOrder.verify(mockCard).checkPin(pinCode);
-        inOrder.verify(mockCard, times(4)).getAccount();
+        inOrder.verify(mockCard, atLeastOnce()).getAccount();
         verify(mockAccount).withdrow(amount);
         inOrder.verify(mockAccount).getBalance();
     }
@@ -221,5 +221,17 @@ public class ATMTest {
         atmTest.insertCard(mockCard);
         atmTest.getCardFromATM();
         atmTest.getCardFromATM();
+    }
+
+    @Test
+    public void testCheckBalanceVerify() throws NoCardInsertedException {
+        System.out.println("checkBalanceVerify");
+        ATM atmTest = new ATM(1000);
+        Card mockCard = mock(Card.class);
+        Account mockAccount = mock(Account.class);
+        when(mockCard.getAccount()).thenReturn(mockAccount);
+        atmTest.insertCard(mockCard);
+        atmTest.checkBalance();
+        verify(mockCard, times(1)).isBlocked();
     }
 }
